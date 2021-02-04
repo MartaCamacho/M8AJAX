@@ -9,7 +9,12 @@ $(document).ready(function () {
              $(`#joke-data`).html(`
             Special joke for you: ${data.value.joke} 
             `);
-        }
+            },
+            error: function(xhr, status, error){
+                console.log(xhr);
+                console.log(status);
+                console.log(error);
+            },
+        });
     });
-});
 });
