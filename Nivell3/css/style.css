@@ -1,0 +1,12 @@
+
+body {
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+}
+
+.picture-box {
+    background-image: url('https://cdn.flickeringmyth.com/wp-content/uploads/2020/03/chuck-norris-600x389.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    height: 200px;
+}
