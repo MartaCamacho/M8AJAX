@@ -1,6 +1,9 @@
 
 body {
     background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 .picture-box {

@@ -1,5 +1,4 @@
 function getJoke() {
-    const url = 
 
 function createNode(element) {
     return document.createElement(element);
@@ -16,11 +15,15 @@ function append(parent, el) {
     .then(function(data) {
       let joke = data.value.joke;
       let span = createNode('span');
-      span.innerHTML = `Special joke for you: ${joke}`
-      append(container, span);
+      span.innerHTML = `Special joke for you: ${joke}`;
+      if (container.hasChildNodes() === true) {
+        container.replaceChild(span, container.childNodes[0]);
+      } else {
+        append(container, span)
+      }
     })
     .catch(function(error) {
       console.log(error);
     });
-}
+};
 
